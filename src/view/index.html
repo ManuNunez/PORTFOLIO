@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="./resources/main.css" rel="stylesheet">
+    <style>
+        .dark-mode .dark\:block { display: block; }
+        .dark-mode .dark\:hidden { display: none; }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mi Portafolio</h1>
+            <button id="theme-toggle" class="bg-gray-800 text-white p-2 rounded dark:bg-gray-300 dark:text-black">Toggle Dark Mode</button>
+        </div>
+    </nav>
+
+
+    <section id="about" class="p-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+            <p class="text-lg">[Tu descripción aquí...]</p>
+        </div>
+    </section>
+
+
+    <section id="projects" class="p-8 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Proyecto 1</h3>
+                    <p class="text-lg">[Descripción del proyecto...]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="p-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Experiencia</h2>
+            <ul class="list-disc pl-5">
+
+                <li class="mb-2">
+                    <h3 class="text-xl font-bold">Trabajo 1</h3>
+                    <p class="text-lg">[Descripción de la experiencia...]</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="icpc-team" class="p-8 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Mi Equipo de ICPC</h2>
+            <p class="text-lg">[Descripción de tu equipo y logros en ICPC...]</p>
+        </div>
+    </section>
+
+
+    <section id="download-cv" class="p-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Descargar CV</h2>
+            <a href="[ruta-a-tu-cv.pdf]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Descargar CV</a>
+        </div>
+    </section>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const rootElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            rootElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
