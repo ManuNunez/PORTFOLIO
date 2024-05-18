@@ -1,82 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link href="./resources/main.css" rel="stylesheet">
-    <style>
-        .dark-mode .dark\:block { display: block; }
-        .dark-mode .dark\:hidden { display: none; }
-    </style>
+    <title>Manuel Nunez</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200">
 
-    <nav class="p-4">
+<body class="bg-white text-gray-900">
+    <nav class="p-4 bg-gray-200">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Mi Portafolio</h1>
-            <button id="theme-toggle" class="bg-gray-800 text-white p-2 rounded dark:bg-gray-300 dark:text-black">Toggle Dark Mode</button>
+            <h1 class="text-2xl font-bold"><a href="index.html">My Portfolio</a></h1>
+            <div class="space-x-4">
+                <a href="about.html" class="text-lg">About Me</a>
+                <a href="projects.html" class="text-lg">Projects</a>
+                <a href="experience.html" class="text-lg">Experience</a>
+                <a href="icpc-team.html" class="text-lg">ICPC</a>
+                <a href="download-cv.html" class="text-lg">Download CV</a>
+            </div>
         </div>
     </nav>
 
-
     <section id="about" class="p-8">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
-            <p class="text-lg">[Tu descripción aquí...]</p>
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">
+                Passionate about math and technology, I teach math for competitions and develop web projects. I guide
+                students in advanced math and use Python for optimization. I enjoy competitive programming and
+                participate in ICPC.
+            </p>
         </div>
     </section>
 
-
-    <section id="projects" class="p-8 bg-gray-100 dark:bg-gray-800">
+    <section id="projects" class="p-8 bg-gray-100">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Proyectos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-
-                <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
-                    <h3 class="text-xl font-bold">Proyecto 1</h3>
-                    <p class="text-lg">[Descripción del proyecto...]</p>
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">PDF BREAKER</h3>
+                        <p class="text-lg mb-2">Handles PDFs by splitting and merging them.</p>
+                        <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
+                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
+                            on GitHub</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Pytube Downloader</h3>
+                        <p class="text-lg mb-2">Downloads videos and audio from YouTube.</p>
+                        <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
+                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
+                            on GitHub</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">OPA</h3>
+                        <p class="text-lg mb-2">Organizes Olympic events efficiently with a web app.</p>
+                        <p class="text-md mb-4"><strong>Technologies:</strong> PHP, JS, Tailwind</p>
+                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
+                            on GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <section id="experience" class="p-8">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Experiencia</h2>
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
             <ul class="list-disc pl-5">
-
-                <li class="mb-2">
-                    <h3 class="text-xl font-bold">Trabajo 1</h3>
-                    <p class="text-lg">[Descripción de la experiencia...]</p>
+                <li class="mb-8">
+                    <h3 class="text-xl font-bold">Math Teacher and Coach</h3>
+                    <p class="text-md text-gray-600">Jan 2024 - Present</p>
+                    <p class="text-lg">Teaching and coaching at Urban School #700, focusing on math Olympiads.</p>
+                </li>
+                <li class="mb-8">
+                    <h3 class="text-xl font-bold">Speaker/ Problem Solver</h3>
+                    <p class="text-md text-gray-600">Oct 2022 - May 2023, Oct 2023 - Dec 2023</p>
+                    <p class="text-lg">Presented VR projects in schools, showcasing alternative teaching methods.</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="icpc-team" class="p-8 bg-gray-100 dark:bg-gray-800">
+    <section id="icpc-team" class="p-8 bg-gray-100">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Mi Equipo de ICPC</h2>
-            <p class="text-lg">[Descripción de tu equipo y logros en ICPC...]</p>
+            <h2 class="text-3xl font-bold mb-4">My ICPC Team</h2>
+            <p class="text-lg">
+                Participating in ICPC has fueled my passion for programming. I've solved challenging problems and
+                connected with like-minded peers, enhancing my skills and fostering a spirit of collaboration.
+            </p>
         </div>
     </section>
-
 
     <section id="download-cv" class="p-8">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Descargar CV</h2>
-            <a href="[ruta-a-tu-cv.pdf]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Descargar CV</a>
+            <h2 class="text-3xl font-bold mb-4">Download CV</h2>
+            <a href="[path-to-your-cv.pdf]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Download CV</a>
         </div>
     </section>
 
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const rootElement = document.documentElement;
-
-        themeToggleBtn.addEventListener('click', () => {
-            rootElement.classList.toggle('dark');
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
