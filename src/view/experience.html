@@ -10,47 +10,83 @@
 </head>
 
 <body class="bg-white text-gray-900">
-    <nav class="p-4 bg-gray-200">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold"><a href="index.html">My Portfolio</a></h1>
-            <div class="space-x-4">
-                <a href="about.html" class="text-lg">About Me</a>
-                <a href="projects.html" class="text-lg">Projects</a>
-                <a href="experience.html" class="text-lg">Experience</a>
-                <a href="icpc-team.html" class="text-lg">ICPC</a>
-                <a href="download-cv.html" class="text-lg">Download CV</a>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./experience.html">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./icpc-team.html">ICPC</a>
+                </li>
+
+            </ul>
         </div>
     </nav>
-    <section id="experience" class="p-8">
-        <div class="container mx-auto">
+
+    <!-- Main Content -->
+    <section id="experience" class="py-8">
+        <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4">Experience</h2>
             <ul class="list-disc pl-5">
-                <li class="mb-8">
-                    <img src="[URL to Image]" alt="Job 1 Image" class="w-24 h-24 rounded-full mb-4">
-                    <h3 class="text-xl font-bold">Mathematics Teacher and Coach</h3>
-                    <p class="text-md text-gray-600">January 2024 - Present</p>
-                    <p class="text-lg">Currently, I teach mathematics and coach students for Olympiads at Urban School
-                        #700 "Encarnación Rosas". This role has allowed me to foster a love for mathematics among
-                        students and help them prepare for various competitions. My approach focuses not only on
-                        teaching mathematical concepts but also on developing critical thinking and problem-solving
-                        skills. I have seen significant improvements in students' performance and their enthusiasm for
-                        the subject.</p>
+                <li class="mb-8 flex">
+                    
+                    <div>
+                        <h3 class="text-xl font-bold">Mathematics Teacher and Coach</h3>
+                        <p class="text-md text-gray-600">January 2024 - Present</p>
+                        <p class="text-lg">Currently, I teach mathematics and coach students for Olympiads at Urban
+                            School #700 "Encarnación Rosas". This role has allowed me to foster a love for mathematics
+                            among students and help them prepare for various competitions. My approach focuses not only
+                            on teaching mathematical concepts but also on developing critical thinking and
+                            problem-solving skills. I have seen significant improvements in students' performance and
+                            their enthusiasm for the subject.</p>
+                    </div>
+                    <img src="./resources/static/images/manu4.jpeg" alt="Mathematics Teacher Image" class="w-150 h-60 rounded-lg mr-4">
                 </li>
-                <li class="mb-8">
-                    <img src="[URL to Image]" alt="Job 2 Image" class="w-24 h-24 rounded-full mb-4">
-                    <h3 class="text-xl font-bold">Speaker/ Problem Solver</h3>
-                    <p class="text-md text-gray-600">October 2022 - May 2023 || October 2023 - December 2023</p>
-                    <p class="text-lg">During these periods, I worked as a speaker and problem solver, presenting
-                        virtual reality (VR) projects to school audiences. My presentations aimed to introduce students
-                        and educators to innovative teaching methods through VR technology. This role enhanced my public
-                        speaking skills and my ability to convey complex ideas in an understandable way. It was
-                        rewarding to see the excitement and interest that these new technologies sparked among students
-                        and teachers alike.</p>
+                <li class="mb-8 flex">
+                    <img src="./resources/static/images/manu3.jpeg" alt="Speaker/Problem Solver Image" class="w-50 h-45 rounded-lg mr-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Speaker/ Problem Solver</h3>
+                        <p class="text-md text-gray-600">October 2022 - May 2023 || October 2023 - December 2023</p>
+                        <p class="text-lg">During these periods, I worked as a speaker and problem solver, presenting
+                            virtual reality (VR) projects to school audiences. My presentations aimed to introduce
+                            students and educators to innovative teaching methods through VR technology. This role
+                            enhanced my public speaking skills and my ability to convey complex ideas in an
+                            understandable way. It was rewarding to see the excitement and interest that these new
+                            technologies sparked among students and teachers alike.</p>
+                    </div>
+                </li>
+                <li class="mb-8 flex">
+                  
+                    <div>
+                        <h3 class="text-xl font-bold">Tester and Documentation at WASP MX</h3>
+                        <p class="text-md text-gray-600">June 2021 - September 2023</p>
+                        <p class="text-lg">At WASP MX, I contributed as a tester, ensuring the quality and functionality
+                            of systems through rigorous testing methodologies. Additionally, I played a crucial role in
+                            documenting system processes and functionalities, providing comprehensive documentation
+                            that facilitated smooth operations and maintenance. This experience enhanced my skills in
+                            system analysis, testing, and documentation, contributing to my overall professional
+                            growth.</p>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
+
+    <!-- Bootstrap JS (optional, if you need dropdowns or other JS functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

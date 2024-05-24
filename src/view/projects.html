@@ -9,55 +9,101 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 text-gray-900">
-    <nav class="p-4 bg-gray-200">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold"><a href="index.html">My Portfolio</a></h1>
-            <div class="space-x-4">
-                <a href="about.html" class="text-lg">About Me</a>
-                <a href="projects.html" class="text-lg">Projects</a>
-                <a href="experience.html" class="text-lg">Experience</a>
-                <a href="icpc-team.html" class="text-lg">ICPC</a>
-                <a href="download-cv.html" class="text-lg">Download CV</a>
-            </div>
-        </div>
-    </nav>
-    <section id="projects" class="p-8">
+<body class="bg-gray-100">
+
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./experience.html">Work Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./icpc-team.html">ICPC</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <section id="projects" class="py-8">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Projects</h2>
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                <h3 class="text-2xl font-bold mb-2">PDF BREAKER</h3>
-                <p class="text-lg mb-2">PDFBreaker is a project I created to efficiently handle PDF files. It provides
-                    two main functions: splitting a PDF into a specified range of pages and merging multiple PDF files
-                    into one. The project features an interactive menu for easy navigation between these functions or
-                    exiting the program. It demonstrates my Python programming skills and my ability to develop
-                    practical solutions for specific problems.</p>
-                <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
-                <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View on
-                    GitHub</a>
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+
+            <!-- Project Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">PDF BREAKER</h3>
+                        <p class="text-lg mb-4">PDFBreaker is a project I created to efficiently handle PDF files. It provides
+                            two main functions: splitting a PDF into a specified range of pages and merging multiple PDF files
+                            into one. The project features an interactive menu for easy navigation between these functions or
+                            exiting the program. It demonstrates my Python programming skills and my ability to develop
+                            practical solutions for specific problems.</p>
+                        <p class="text-md mb-2"><strong>Technologies:</strong> Python</p>
+                        <a href="https://github.com/ManuNunez/PDFBREAKER.git" class="bg-blue-500 text-white px-4 py-2 rounded inline-block hover:bg-blue-600">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Pytube Downloader</h3>
+                        <p class="text-lg mb-4">The YT Downloader is a tool designed to simplify downloading videos and audio
+                            from YouTube. By leveraging the Pytube library, the tool offers a straightforward interface to fetch
+                            and download content directly from YouTube, making it easier for users to access their desired
+                            videos offline.</p>
+                        <p class="text-md mb-2"><strong>Technologies:</strong> Python</p>
+                        <a href="https://github.com/ManuNunez/YTDownloader.git" class="bg-blue-500 text-white px-4 py-2 rounded inline-block hover:bg-blue-600">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">OPA</h3>
+                        <p class="text-lg mb-4">OPA (Olympic Planning Application) is a web application I developed to
+                            streamline the organization of Olympic events. It is designed to handle various aspects of event
+                            management, from scheduling to participant tracking. The application showcases my skills in web
+                            development, particularly with PHP, JavaScript, and Tailwind CSS.</p>
+                        <p class="text-md mb-2"><strong>Technologies:</strong> PHP, JS, Tailwind</p>
+                        <a href="https://github.com/ManuNunez/olimpic_protocol_app.git" class="bg-blue-500 text-white px-4 py-2 rounded inline-block hover:bg-blue-600">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Python Organizer</h3>
+                        <p class="text-lg mb-4">Python Organizer is a script designed to organize files within a specified folder
+                            based on their file extensions. It categorizes files into folders such as Images, Documents, Music,
+                            Videos, Code, and Others, depending on their file types. This project showcases my proficiency in Python
+                            scripting and file manipulation, demonstrating my ability to automate organizational tasks effectively.</p>
+                        <p class="text-md mb-2"><strong>Technologies:</strong> Python</p>
+                        <a href="https://github.com/ManuNunez/python_organizer.git" class="bg-blue-500 text-white px-4 py-2 rounded inline-block hover:bg-blue-600">View on GitHub</a>
+                    </div>
+                </div>
+                
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                <h3 class="text-2xl font-bold mb-2">Pytube Downloader</h3>
-                <p class="text-lg mb-2">The YT Downloader is a tool designed to simplify downloading videos and audio
-                    from YouTube. By leveraging the Pytube library, the tool offers a straightforward interface to fetch
-                    and download content directly from YouTube, making it easier for users to access their desired
-                    videos offline.</p>
-                <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
-                <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View on
-                    GitHub</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                <h3 class="text-2xl font-bold mb-2">OPA</h3>
-                <p class="text-lg mb-2">OPA (Olympic Planning Application) is a web application I developed to
-                    streamline the organization of Olympic events. It is designed to handle various aspects of event
-                    management, from scheduling to participant tracking. The application showcases my skills in web
-                    development, particularly with PHP, JavaScript, and Tailwind CSS.</p>
-                <p class="text-md mb-4"><strong>Technologies:</strong> PHP, JS, Tailwind</p>
-                <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View on
-                    GitHub</a>
-            </div>
+            <!-- End Project Cards -->
         </div>
     </section>
+
+    <!-- Bootstrap JS (optional, if you need dropdowns or other JS functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

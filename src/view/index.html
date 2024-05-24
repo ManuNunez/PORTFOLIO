@@ -5,108 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Nunez</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-white text-gray-900">
-    <nav class="p-4 bg-gray-200">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold"><a href="index.html">My Portfolio</a></h1>
-            <div class="space-x-4">
-                <a href="about.html" class="text-lg">About Me</a>
-                <a href="projects.html" class="text-lg">Projects</a>
-                <a href="experience.html" class="text-lg">Experience</a>
-                <a href="icpc-team.html" class="text-lg">ICPC</a>
-                <a href="download-cv.html" class="text-lg">Download CV</a>
-            </div>
-        </div>
-    </nav>
+<body class="bg-gray-100">
 
-    <section id="about" class="p-8">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">About Me</h2>
-            <p class="text-lg">
-                Passionate about math and technology, I teach math for competitions and develop web projects. I guide
-                students in advanced math and use Python for optimization. I enjoy competitive programming and
-                participate in ICPC.
-            </p>
-        </div>
-    </section>
-
-    <section id="projects" class="p-8 bg-gray-100">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Projects</h2>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold mb-2">PDF BREAKER</h3>
-                        <p class="text-lg mb-2">Handles PDFs by splitting and merging them.</p>
-                        <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
-                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
-                            on GitHub</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold mb-2">Pytube Downloader</h3>
-                        <p class="text-lg mb-2">Downloads videos and audio from YouTube.</p>
-                        <p class="text-md mb-4"><strong>Technologies:</strong> Python</p>
-                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
-                            on GitHub</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold mb-2">OPA</h3>
-                        <p class="text-lg mb-2">Organizes Olympic events efficiently with a web app.</p>
-                        <p class="text-md mb-4"><strong>Technologies:</strong> PHP, JS, Tailwind</p>
-                        <a href="[GitHub Repository URL]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">View
-                            on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="p-8">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Experience</h2>
-            <ul class="list-disc pl-5">
-                <li class="mb-8">
-                    <h3 class="text-xl font-bold">Math Teacher and Coach</h3>
-                    <p class="text-md text-gray-600">Jan 2024 - Present</p>
-                    <p class="text-lg">Teaching and coaching at Urban School #700, focusing on math Olympiads.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
                 </li>
-                <li class="mb-8">
-                    <h3 class="text-xl font-bold">Speaker/ Problem Solver</h3>
-                    <p class="text-md text-gray-600">Oct 2022 - May 2023, Oct 2023 - Dec 2023</p>
-                    <p class="text-lg">Presented VR projects in schools, showcasing alternative teaching methods.</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-experience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#icpc">ICPC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#download-cv">Download CV</a>
                 </li>
             </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="icpc-team" class="p-8 bg-gray-100">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">My ICPC Team</h2>
-            <p class="text-lg">
-                Participating in ICPC has fueled my passion for programming. I've solved challenging problems and
-                connected with like-minded peers, enhancing my skills and fostering a spirit of collaboration.
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <section id="about-me" class="mb-12">
+            <div class="flex items-center mb-4">
+                <div class="w-32 h-32 mr-4 overflow-hidden rounded-full">
+                    <img src="/src/view/resources/static/images/manu1.jpeg" alt="Me at the nevado de Colima" class="object-cover w-full h-full">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">About Me</h2>
+                    <p class="mb-4">Passionate about math and technology, I've dedicated my career to teaching mathematics for Olympic competitions and web development...</p>
+                    <a href="about.html" class="text-blue-500 inline-block">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <p>In my free time I enjoy creating projects in Python that help automate tedious tasks in my daily life and
+                web applications, because I believe this will keep me in constant development.</p>
+            <a href="projects.html" class="text-blue-500 mt-2 inline-block">Explore Projects</a>
+        </section>
+
+        <section id="work-experience" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+            <p>I have dedicated a large part of my life to Olympic mathematics so much so that my effort has been
+                recognized, giving me the confidence and opportunity to work on training new generations of young
+                competitors, in addition to having had experience in testing web applications to ensure the product
+                excellence for small and large companies.</p>
+            <a href="experience.html" class="text-blue-500 mt-2 inline-block">View Experience</a>
+        </section>
+
+        <section id="icpc" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Competive Programming</h2>
+            <p>Competitiveness has helped me take my knowledge further, so I try to expose myself to competitive
+                environments every time I can and programming is no exception, which is why I decided to be part of a
+                team that participates in both icpc and other projects. that encourage my growth as a developer
             </p>
-        </div>
-    </section>
+            <a href="./icpc-team.html" class="text-blue-500 mt-2 inline-block">ICPC Details</a>
+        </section>
 
-    <section id="download-cv" class="p-8">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Download CV</h2>
-            <a href="[path-to-your-cv.pdf]" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Download CV</a>
-        </div>
-    </section>
+        <section id="download-cv">
+            <h2 class="text-2xl font-bold mb-4">Download CV</h2>
+            <p>here you can see my CV
+            </p>
+            <a href="./resources/static/documents/CV_Developer.pdf" target="_blank" class="bg-blue-500 text-white px-4 py-2 mt-2 inline-block rounded hover:bg-blue-600">Download
+                Now</a>
+        </section>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS (optional, if you need dropdowns or other JS functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
